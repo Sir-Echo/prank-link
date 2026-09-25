@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>...</title>
+<style>
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:#000;color:#e5e7eb;font-family:Consolas,monospace;display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden}
+.st{max-width:640px;width:100%;text-align:center}
+.g{position:relative;font-size:clamp(20px,6vw,36px);font-weight:700;color:#ff1744;line-height:1.4;word-break:break-all;text-shadow:0 0 8px rgba(255,23,68,.8);animation:fl .15s infinite alternate}
+.g::before,.g::after{content:attr(data-text);position:absolute;top:0;left:0;right:0;overflow:hidden}
+.g::before{color:#00e5ff;clip-path:inset(0 0 55% 0);animation:gt .4s infinite linear alternate-reverse}
+.g::after{color:#76ff03;clip-path:inset(55% 0 0 0);animation:gb .35s infinite linear alternate-reverse}
+@keyframes fl{0%{opacity:1}50%{opacity:.85}100%{opacity:1}}
+@keyframes gt{0%{transform:translate(-2px,-1px)}50%{transform:translate(3px,-2px)}100%{transform:translate(-3px,1px)}}
+@keyframes gb{0%{transform:translate(2px,1px)}50%{transform:translate(-3px,2px)}100%{transform:translate(3px,-1px)}}
+.sc{margin-top:14px;font-size:13px;color:#ff1744;opacity:.8;letter-spacing:2px}
+#jp{opacity:0;transform:scale(.94);transition:opacity .35s ease,transform .35s ease}
+#jp.sh{opacity:1;transform:scale(1)}
+.jt{font-size:clamp(24px,6vw,34px);font-weight:800;color:#ffd54f}
+.js{margin-top:10px;font-size:16px;color:#cbd5e1;opacity:0;transition:opacity .35s ease}
+.js.sh{opacity:1}
+</style></head>
+<body><div class="st">
+<div id="g1"><div class="g" id="g">3RR0R_0x7F4C_$Y5_C0RRUPT3D_01001000</div><div class="sc">[ SYSTEM BREACH DETECTED ]</div></div>
+<div id="jp"><div class="jt">Wala na, na-hack ka na! 😄</div><div class="js" id="js">joke lang po — kalma lang, d ka na-hack.</div></div>
+</div>
+<script>
+document.getElementById('g').setAttribute('data-text',document.getElementById('g').textContent);
+setTimeout(function(){document.getElementById('g1').style.display='none';document.getElementById('jp').classList.add('sh')},1000);
+setTimeout(function(){document.getElementById('js').classList.add('sh')},2000);
+</script></body></html>
